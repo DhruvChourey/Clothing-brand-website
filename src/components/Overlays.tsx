@@ -58,13 +58,13 @@ function MenuDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
           </span>
         </button>
       </div>
-      <nav aria-label="Mobile" className="mt-10 flex flex-1 flex-col px-5">
+      <nav aria-label="Mobile" className="mt-6 flex flex-1 flex-col px-5">
         {NAV.map((item) => (
           <Link
             key={item.label}
             to={item.to}
             data-drawer-item
-            className="heading border-b border-charcoal/12 py-5 text-[2.5rem]"
+            className="heading border-b border-charcoal/12 py-4 text-[1.65rem] sm:text-[2rem]"
           >
             {item.label}
           </Link>
